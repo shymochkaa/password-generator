@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main">
+        <div class="wrapper">
+            <div class="text-wrapper">
+                <h1>Generate a<br> <span class="green-text">random password</span></h1>
+                <p class="grey-text subtitle">Never use an insecure password again.</p>
+            </div>
+            
+            <div class="input-wrapper">
+                
+                <form onsubmit="return false">
+                    <p class="grey-text">Numbers</p>
+                    <label id="toggle-switch"  class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <label for="quantity" class="grey-text">Length</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="20" value=15 required>
+                    <!-- <input type="submit" value="Generate passwords" class="generate-password" id= "generate-password-button"> -->
+                    <button type="submit" id= "generate-password-button" class="generate-password" >Generate passwords</button>
+                </form>
+            </div>
+            <!-- <button type="button" id= "generate-password-button" class="generate-password" >Generate passwords</button> -->
+            
+        
+        </div>
+        <div class="results">
+            <div onclick="myFunction();return false;" class="result-item">
+                <p  id="first-result"></p>
+            </div>
+            <div class="result-item">
+                <p id="second-result"></p>
+            </div>
+        </div>
+
+
+    </section>
+   
+    
+    <script src="index.js"></script>    
+</body>
+</html>
